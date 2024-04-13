@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BG-COLOR */
+.bg-orange {
+    background-color: rgb(255, 159, 10);
+    color: white;
+}
+
+.bg-blue {
+    background-color: rgb(119, 168, 176);
+    color: white;
+}
+
+.bg-grey {
+    background-color: rgb(187, 187, 187);
+}
+
+/* COMMONS */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container {
+    max-width: 400px;
+    min-width: 400px;
+
+    margin: 100px;
+    background-image: linear-gradient(to top left, #eeee 30%, rgb(190, 190, 190) 100%);
+    border-radius: 10px;
+    box-shadow: 0 3px 0 2px rgb(76, 76, 76);
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container img {
+    height: 100px;
+}
+
+/* DISPLAY */
+#display {
+    background-color: black;
+    font-size: 35px;
+    height: 76px;
+    padding: 20px;
+    text-align: right;
+    color: rgb(8, 213, 161);
+    font-family: 'seven segment', 'arial', sans-serif;
+}
+
+pre {
+    font-family: 'seven segment', 'arial', sans-serif;
+}
+/* /DISPLAY */
+
+/* BIG CONTAINER */
+.container {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* CONTAINER NUMBERS */
+.number {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.numbers {
+    width: calc(100% / 3 - 20px);
+    aspect-ratio: 1;
+    line-height: 86px;
+    margin: 10px;
+
+}
+
+
+/* CONTAINERS SYMBOL */
+.symbol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.symbols {
+    height: calc(100% / 5);
+    aspect-ratio: 1;
+    margin-right: 20px;
+    margin-left: 5px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.numbers,
+.symbols {
+    border-radius: 5px;
+    box-shadow: 0 1px 0 1px rgb(76, 76, 76);
+    text-align: center;
+    font-family: 'arial', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+.numbers,
+.symbols {
+    font-family: cursive;
+}
+
+.special {
+    flex-grow: 1;
+    aspect-ratio: 0;
+}
+
+.symbols.bg-orange:hover,
+.numbers.bg-orange:hover {
+    box-shadow: 0 1px 0 1px rgb(255, 159, 10);
+}
+
+
