@@ -14,3 +14,41 @@ function createNumber(number) {
   }
   return divElem;
 }
+
+function createSymbol(numberSymbol) {
+  const divElem = document.createElement("button");
+  divElem.classList.add("symbols", "btn-symbol");
+  if (i == 1) {
+    divElem.classList.add("bg-orange");
+  } else {
+    divElem.classList.add("bg-blue");
+  }
+  switch (numberSymbol) {
+    case 1:
+      divElem.innerText = "C";
+      divElem.classList.add("reset");
+      break;
+
+    case 2:
+      divElem.innerText = "+";
+      divElem.classList.add = "add";
+      break;
+
+    case 3:
+      divElem.innerText = "-";
+      divElem.classList.add = "less";
+      break;
+
+    case 4:
+      divElem.innerText = "x";
+      divElem.classList.add = "moltpli";
+      break;
+
+    case 5:
+      divElem.innerText = "/";
+      divElem.classList.add = "divider";
+      break;
+  }
+
+  return divElem;
+}
