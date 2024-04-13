@@ -64,3 +64,16 @@ function btnNumber() {
   console.log(divDisplayElem.innerHTML);
   return divDisplayElem.innerHTML;
 }
+
+function btnOpe() {
+  divDisplayElem = document.getElementById("display");
+  if (cont == 0) {
+    valore1 = divDisplayElem.innerHTML;
+    operator = this.innerHTML;
+  } else {
+    valore2 = divDisplayElem.innerHTML;
+  }
+  cont += 1;
+  divDisplayElem.innerHTML = "";
+  console.log(valore1, operator, valore2);
+}
