@@ -52,3 +52,15 @@ function createSymbol(numberSymbol) {
 
   return divElem;
 }
+
+function btnNumber() {
+  divDisplayElem = document.getElementById("display");
+  if (divDisplayElem.innerHTML == 0) {
+    divDisplayElem.innerHTML = "";
+    divDisplayElem.innerHTML = this.innerHTML;
+  } else if (divDisplayElem.innerHTML.length <= 5) {
+    divDisplayElem.innerHTML += this.innerHTML;
+  }
+  console.log(divDisplayElem.innerHTML);
+  return divDisplayElem.innerHTML;
+}
