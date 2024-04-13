@@ -29,3 +29,15 @@ const rstButton = document.querySelector(".reset");
 rstButton.addEventListener("click",function(){
   window.location.reload();
 });
+
+//  btn functions
+for(let i = 0; i <= 9; i++){
+  btnNumberArray[i].addEventListener("click", btnNumber);
+}
+
+for(let j = 1; j < 5; j++){
+  btnSymbolArray[j].addEventListener("click", btnOpe);
+}
+
+
+btnEqual.addEventListener("click", btnTotal);
