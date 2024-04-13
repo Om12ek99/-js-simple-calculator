@@ -77,3 +77,20 @@ function btnOpe() {
   divDisplayElem.innerHTML = "";
   console.log(valore1, operator, valore2);
 }
+
+function btnTotal() {
+  divDisplayElem = document.getElementById("display");
+  valore2 = divDisplayElem.innerHTML;
+  valore1 = parseInt(valore1);
+  valore2 = parseInt(valore2);
+  if (operator == "x") {
+    operator = "*";
+  }
+  valore1 = valore1 + operator + valore2;
+  valore1 = eval(valore1);
+  console.log(valore1, valore2, operator);
+  divDisplayElem.innerHTML = valore1;
+  if ((valore2 == 0 && operator == "/") || (valore1 == 0 && operator == "/")) {
+    divDisplayElem.innerHTML = "ERROR";
+  }
+}
