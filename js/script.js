@@ -24,3 +24,8 @@ const btnNumberArray = document.querySelectorAll(".btn-number");
 const btnSymbolArray = document.querySelectorAll(".btn-symbol");
 const btnEqual = document.querySelector(".btn-total");
 const rstButton = document.querySelector(".reset");
+
+// c button (reset)
+rstButton.addEventListener("click",function(){
+  window.location.reload();
+});
