@@ -20,3 +20,7 @@ for (i = 1; i <= 5; i++) {
   divSymbolElem.append(newSymbol);
 }
 
+const btnNumberArray = document.querySelectorAll(".btn-number");
+const btnSymbolArray = document.querySelectorAll(".btn-symbol");
+const btnEqual = document.querySelector(".btn-total");
+const rstButton = document.querySelector(".reset");
